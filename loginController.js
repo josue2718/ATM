@@ -12,7 +12,7 @@ angular.module('myApp', [])
         var cardNumber = $scope.inputValue;
         if($scope.loginAttempts<5)
         {
-            $http.get('https://localhost:7282/api/clientes/BuscarPorNumTarjeta/' + cardNumber)
+            $http.get('https://localhost:7282/api/Clientes/BuscarPorNumTarjeta/' + cardNumber)
                         .then(function(response) {
                             $scope.id=response.data.iD_cliente
                             $window.location.href ='Loginnip.html#!/?id=' +$scope.id;
@@ -44,7 +44,7 @@ angular.module('myApp', [])
     $scope.Tarjeta = function () {
         var cardNumber = $scope.inputValue;
 
-        $http.get('https://localhost:7282/api/clientes/BuscarPorNumTarjeta/' + cardNumber)
+        $http.get('https://localhost:7282/api/Clientes/BuscarPorNumTarjeta/' + cardNumber)
             .then(function(response) {
                 $scope.id=response.data.iD_cliente
                 $window.location.href ='DepositarT.html#!/?id=' +$scope.id;
