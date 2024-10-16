@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cambio NIP</title>
+  <link rel="stylesheet" href="nip.css">
+  <script src="angular.min.js"></script>
+  <script src="NIP.js"></script>
+</head>
+<body>
+  <h1 class="logotipo"> <img src="SB.png" alt="Logo de Start Bank"> Nuevo NIP</h1>
+ <br><br><br><br>
+  <div class="Login" ng-controller="NuevoNipController" ng-init="limpiarCampos()"> 
+      <form ng-submit="guardarNIP()">
+        <div>
+            <label for="nuevoNIP">Nuevo NIP (4 digitos):</label><br>
+            <input type="password" ng-model="nuevoNIP" name="nuevoNIP" pattern="\d{4}" placeholder="Ingrese el nuevo NIP" required maxlength="4">
+        </div>
+        <div>
+            <label for="confirmarNIP">Confirmar NIP:</label><br>
+            <input type="password" ng-model="confirmarNIP" name="confirmarNIP" pattern="\d{4}" placeholder="Confirme el nuevo NIP" required maxlength="4">
+        </div>
+        <br>
+        <input type="submit" value="Guardar">
+    </form>
+  </div>
+  <br><br><br>
+  <div class="regresar" ng-controller="NuevoNipController">
+    <a href="MenuPrincipal.html#!/?id={{id}}"> <input type="button" value="Regresar"></a>
+  </div>
+</body>
+</html>

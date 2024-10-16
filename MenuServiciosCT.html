@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <title>Servicios</title>
+  <link rel="stylesheet" href="Servicios.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="angular.min.js"></script>
+  <script src="ServiciosCT.js"></script>
+</head>
+<body>
+  
+  <h1 class="logotipo"> <img src="SB.png" alt="Texto alternativo para la imagen"> START BANK</h1>
+    <br><div class="tarjeta"><h4></h4></div>
+
+    <h2>Selecciona una Opción</h2>
+    <div ng-controller="servicio" class="container">
+      <button type="button" ng-click="guardarOperacion('CFE'); ">
+        <img src="CFE.jpeg" alt="CFE">
+      </button>
+      <button type="button" ng-click="guardarOperacion('IZZI');">
+        <img src="izzi.png" alt="IZZI"> 
+      </button>
+      <button type="button" ng-click="guardarOperacion('TOTALPLAY');">
+        <img src="total play.png" alt="TOTALPLAY">
+      </button>
+    </div>
+    <br><br><br><br>
+    <div ng-controller="servicio" class="container2">
+      <button type="button" ng-click="guardarOperacion('TELMEX'); ">
+        <img src="telmex.png" alt="telmex">
+      </button>
+      <button type="button" ng-click="guardarOperacion('SKY');">
+        <img src="sky.jpeg" alt="sky">
+      </button>
+    </div>
+    <br> <br> <br> <br> <br> 
+    <div ng-controller="pago" class="container3">
+      <button type="button" ng-click="redirigir('MenuPrincipal.html')">
+        Regresar
+      </button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en"  ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="Tarjet_AbonoStyles.css" href =>
+    <title>Estudiantil</title>
+    <link rel="icon" href="SB.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <script src="angular.min.js"></script>
+    <script src="CreditoEstuciantilSueldo.js"></script>
+</head>
+<body>
+    <h1 class="logotipo"> <img src="SB.png" alt="Texto alternativo para la imagen"> Pago Credito Estudiantil</h1>
+
+    <br><br>
+    
+    <br></br>
+
+    <div class="tarjeta" ng-controller="Pago2">
+        <h3>Saldo: {{ Saldo | currency }}</h3>
+        <h3>Pago correspondiente: {{ monto | currency }}</h3>
+    </div> 
+    
+    <div class="Login" ng-controller="Pago">
+        <form ng-submit="pago()">
+            <input type="number" ng-model="monto" name="monto" min="10" max="9000" step="10" placeholder="Ingrese el monto" required>
+            <h5>Ingrese la cantidad correspondiente</h5><br>
+            <input type="submit" value="Continuar"></a>
+        </form> 
+    </div>
+    <br><br><br> 
+    <div class="regresar" ng-controller="Pago">
+        <a href="Credito_EstudiantilSueldo.html#!/?id={{id}}"> <input type="submit" value="Regresar"></a>
+      </div> 
+</body>
+</html>

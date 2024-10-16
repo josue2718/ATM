@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="Menu_Credito.css">
+    <title>Pago Tarjeta de Crédito</title>
+    <link rel="icon" href="SB.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="angular.min.js"></script>
+    <script src="Credito.js"></script> 
+</head>
+<body>
+    <h1 class="logotipo"> <img src="SB.png" alt="Texto alternativo para la imagen"> Pago Tarjeta</h1>
+
+    <br><br>
+
+    <h4>Seleccione una opción</h4>
+    <br></br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div ng-controller="credito" class="container">
+            <button type="button" ng-click="guardarOperacion('Abono'); redirigir('Tarjeta_Abono.html')" >Abono</button>
+            <button type="button" ng-click="guardarOperacion('Total'); redirigir('Tarjeta_PagoTotal.html')" >Pago Total</button>
+    </div>  
+    <br><br><br>
+    <div class="container2" ng-controller="credito">
+        <a href="Pago_Credito.html#!/?id={{id}}"><input type="submit" value="Regresar"></a>
+</div>  
+</body>
+</html>

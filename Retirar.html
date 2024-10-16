@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <title>Retirar</title>
+  <link rel="stylesheet" href="Transacciones.css">
+  <link rel="icon" href="SB.png" type="image/png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="angular.min.js"></script>
+  <script src="retiro.js"></script>
+</head>
+<body>
+  <h1 class="logotipo"> <img src="SB.png" alt="Texto alternativo para la imagen"> Retirar</h1>
+    <br><div class="tarjeta"  ng-controller="Saldo" ><h4></h4>
+    <h2>Saldo: {{ Saldo| currency }}</h2></div>
+    <h4>Solo puedes retirar hasta: $9,000</h4>
+    <h4>Tengo billetes desde: $20 hasta $1,000</h4>
+    <br><br><br><br>
+    <h4></h4>
+    <br><br><br><br>
+  
+    <div ng-controller="retiro" class="container">
+      <button type="button" ng-click="retirar(500)">Retirar $500</button><br><br>
+      <button type="button" ng-click="retirar(1000)">Retirar $1,000</button>
+    </div>
+    <div ng-controller="retiro" class="container">
+      <button type="button" ng-click="retirar(2000)">Retirar $2,000</button><br><br>
+      <button type="button" ng-click="redirigir('retiraotracantidad.html#!/?id=')">Retirar otra cantidad</button>
+    </div>
+    <div ng-controller="retiro" class="container">
+      <button type="button" ng-click="retirar(5000)">Retirar $5,000</button><br><br>
+      <button type="button" ng-click="redirigir('MenuTransacciones.html#!/?id=')">Regresar</button>
+    </div>
+</body>
+</html>

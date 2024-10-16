@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retirar</title>
+  <link rel="icon" href="SB.png" type="image/png">
+  <link rel="stylesheet" href="otracantidad.css">
+  <script src="angular.min.js"></script>
+  <script src="retiro.js"></script>
+</head>
+<body>
+  <h1 class="logotipo"> <img src="SB.png" alt="Texto alternativo para la imagen"> Retirar</h1>
+  <br><div class="tarjeta"  ng-controller="Saldo" ><h4></h4>
+    <h2>Saldo: {{ Saldo| currency }}</h2></div>
+  <h4>Solo puedes retirar hasta: $9,000</h4>
+  <h4>Tengo billetes desde: $20 a $1,000</h4>
+  <div class="Login" ng-controller="retiro">
+    
+      <form ng-submit="retirar2()">
+          <input type="number" ng-model="monto" name="monto" min="20" max="9000" step="20" placeholder="Ingrese el monto" required>
+          <h5>Ingrese la cantidad que desea retirar</h5><br>
+          <input type="submit" value="Retirar">
+      </form> 
+  </div>
+  <br><br><br><br><br><br>
+  <div class="regresar"ng-controller="Saldo">
+    <a href="Retirar.html#!/?id={{id}}"> <input type="submit" value="Regresar"></a>
+  </div>
+</body>
+</html>

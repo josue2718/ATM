@@ -1,0 +1,119 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  body{
+    height: 100vh;
+    background: rgb(255,117,117);
+    background: radial-gradient(circle, rgba(255,117,117,1) 0%, rgb(185, 16, 16) 100%);
+    color: rgb(0, 0, 0);
+    background-size:cover;
+  
+  
+  }
+  h1{
+    background-color: rgb(255, 255, 255);
+    padding: 2vw;
+    color: rgb(0, 0, 0);
+    text-align: center ;
+    
+  }
+  h2{
+  
+    color: #ffffff;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  h4
+  {
+    color: #ffffff;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .container {
+    text-align: center;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    width: 1290px;
+  }
+
+  .container input
+  {
+    width: 450px;
+    margin:3%;
+    text-align: center;
+    padding: 15px 0px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer; 
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+
+    ;
+  }
+  .container input[type="submit"]:hover 
+  { background-color: #ba1b1b;
+    color: #ffffff;
+  }
+  .container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.container button
+{
+  width: 450px;
+  margin:1%;
+  text-align: center;
+  padding: 15px 10px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer; 
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+.container button:hover {
+  background-color: #ba1b1b;
+  color: #ffffff;
+}
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+  .container2 input
+  {
+    width: 450px;
+    margin:0%;
+    text-align: center;
+    padding: 15px 0px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer; 
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+
+    ;
+  }
+  .container2 input[type="submit"]:hover 
+  { background-color: #ba1b1b;
+    color: #ffffff;
+  }
+
+  .logotipo img {
+  
+    width:70px; 
+    height: auto; 
+    margin: 0%;
+    position: absolute;
+    top: 3%;
+    right: 0;
+    margin-right: 20px;
+    display: block;
+  }

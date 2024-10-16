@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en"  ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="Tarjet_AbonoStyles.css">
+    <title>Mensualidad</title>
+    <link rel="icon" href="SB.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="angular.min.js"></script>
+    <script src="Credito.js"></script>
+</head>
+<body ng-controller="hipoteca">
+    <h1 class="logotipo"> <img src="SB.png" alt="Texto alternativo para la imagen"> Pago Mensualidad</h1>
+    <h2>Deuda:{{Saldo | currency }}</h2>
+    <h2>Mensualidad a pagar:{{mensualidad | currency }}</h2><br>
+    <div class="Login" >
+        <form ng-submit="Mensual()">
+            <input type="number" ng-model="monto" name="monto" min="20" max="100000" step="20" placeholder="Ingrese el monto" required>
+            <h5>Ingrese la cantidad correspondiente</h5><br>
+            <input type="submit" value="Pagar">
+        </form> 
+    </div>
+    <br><br>
+    <br><br>
+    <br>
+    <div class="regresar">
+        <a href="Hipotecario_Credit.html#!/?id={{id}}"> <input type="submit" value="Regresar"></a>
+      </div>
+
+</body>
+</html>

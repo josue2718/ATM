@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="menuprincipal.css">
+  <title>Start Bank</title>
+  <link rel="icon" href="SB.png" type="image/png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="angular.min.js"></script>
+  <script src="Menu.js"></script> 
+</head>
+<body>
+  <h1 class="logotipo"> <img src="SB.png" alt="Texto alternativo para la imagen"> Menú</h1>
+  <body >
+    <br>
+    <br>
+    <div ng-controller="Nombre">
+        <h2>Hola: {{nombre}}</h2>
+    </div>
+    <br><div ng-controller="Nombre" class="tarjeta"><h4>Tipo de Tarjeta: {{Tipo}}</h4></div>
+    <br><br>
+    <h4>Seleccione Una Opción</h4>
+    <br><br><br><br><br><br>
+  
+  <div class="container" ng-controller="Nombre">
+    <a href="MenuTransacciones.html#!/?id={{id}}"+><input type="submit" value="Transacciones"></a>
+    <a href="NIP.html#!/?id={{id}}"><input type="submit" value="Cambio De NIP"> </a>
+  </div>
+    <div ng-controller="Nombre" class="container2">
+      <button type="button" ng-click="redirigir('Pago_Credito.html')">Pago Tarjeta</button>
+      <button type="button" ng-click="redirigir2('Pago_CreditoEstudiantil.html')">Crédito Educativo</button>
+    </div>
+  <div class="container" ng-controller="Nombre">
+    <a href="MenuServiciosCT.html#!/?id={{id}}"><input type="submit" value="Pago Servicios"> </a>
+    <a href="Principal.html"><input type="submit" value="Retirar Tarjeta"> </a>
+  </div>
+</body>
+</html>

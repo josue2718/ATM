@@ -1,0 +1,115 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  body{
+    height: 100vh;
+    background: rgb(255,117,117);
+    background: radial-gradient(circle, rgba(255,117,117,1) 0%, rgb(185, 16, 16) 100%);
+    color: rgb(0, 0, 0);
+  }
+  h1{
+    background-color: rgb(255, 255, 255);
+    padding: 2vw;
+    color: rgb(0, 0, 0);
+    text-align: center ;
+  }
+  h5
+  {
+    color:#000000;
+  }
+  .Login {
+        max-width:400px;
+        margin: 1px auto;
+        padding: 30px;
+        border: 1px solid rgba(0, 0, 0, 0);
+        border-radius: 10px;
+        background-color: aliceblue;
+    }
+    .Login  h5 {
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    .regresar input
+    {
+      font-family: Arial, Helvetica, sans-serif;
+      margin:1%;
+      padding: 10px 100px;
+      border: none;
+      border-radius: 100px;
+      cursor: pointer; 
+      background-color: #ffffff;
+      color: rgb(0, 0, 0);
+    }
+    .regresar input[type="submit"]:hover 
+    { background-color: #ba1b1b;
+      color: #ffffff;
+
+    }
+    .imagen img {
+      width: 15%; /* Ancho del GIF */
+      height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+      display: block; /* Para centrar horizontalmente */
+      margin: 0 auto; /* Centra horizontalmente */
+      margin-top:0px; /* Espaciado superior */
+      border: 0px solid rgba(0, 0, 0, 0); /* Añadir borde */
+      border-radius: 1px; /* Añadir esquinas redondeadas */
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0); /* Añadir sombra */
+    }
+    .error {
+      color: rgb(255, 0, 0);
+      text-align: center;
+      margin-top: 10px;
+  }
+  h2 {
+ 
+    margin: 1%;
+    color: rgb(255, 255, 255);
+   
+  }
+  h4 {
+   
+    margin: 1%;
+    color: rgb(255, 255, 255);
+   
+  }
+  
+.logotipo img {
+  
+  width:70px; 
+  height: auto; 
+  margin: 0%;
+  position: absolute;
+  top: 3%;
+  right: 0;
+  margin-right: 20px;
+  display: block;
+}
+
+.Login  input[type="password"]
+{
+
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(109, 109, 109);
+    border-radius: 10px;
+    box-sizing: border-box;
+    
+}
+.Login  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 100px;
+    background-color: #ff0000bb;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.Login  input[type="submit"]:hover {
+    background-color: #eb1c1c;
+
+}

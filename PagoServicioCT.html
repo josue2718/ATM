@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios</title>
+  <link rel="stylesheet" href="Pagoservicio.css">
+  <script src="angular.min.js"></script>
+  <script src="ServiciosCT.js"></script>
+</head>
+<body>
+  <h1 class="logotipo"> <img src="SB.png" alt="Texto alternativo para la imagen">Servicio</h1>
+ <br><br><br><br>
+ <div ng-controller="pago">
+  <h2>Saldo: {{Saldo | currency }}</h2>
+ </div>
+  <div class="Login" ng-controller="pago" ng-init="limpiarCampos()">
+      <form ng-submit="pagos()">
+        <div>
+            <label for="referencia">Número de referencia (16 dígitos):</label><br>
+            <input type="text" ng-model="referencia" name="referencia" pattern="\d{16}" placeholder="Ingrese el número de referencia" required maxlength="16">
+        </div>
+        <div>
+            <label for="monto">Monto:</label><br>
+            <input type="text" ng-model="monto" name="monto" pattern="\d+" placeholder="Ingrese el monto" required>
+        </div>
+        <br>
+        <input type="submit" value="Pagar">
+    </form>
+  </div>
+  <br><br><br>
+  <div class="regresar" ng-controller="pago">
+    <a href="MenuServiciosCT.html#!/?id={{id}}"> <input type="button" value="Regresar"></a>
+  </div>
+</body>
+</html>
+

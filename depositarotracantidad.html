@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Depositar</title>
+  <link rel="stylesheet" href="otracantidad.css">
+  <link rel="icon" href="SB.png" type="image/png">
+  <script src="angular.min.js"></script>
+  <script src="Deposito.js"></script>
+</head>
+<body>
+  <h1 class="logotipo"> <img src="SB.png" alt="Texto alternativo para la imagen"> Depositar</h1>
+  <br><div class="tarjeta"  ng-controller="Saldo">
+    <h2>Saldo: {{Saldo | currency }}</h2></div>
+  <h4>Solo puedes depositar hasta: $9,000</h4>
+  <h4>Tengo billetes desde: $20 a $1,000</h4>
+  <div class="Login" ng-controller="deposito">
+      <form ng-submit="depositar2()">
+          <input type="number" ng-model="monto" name="monto" min="20" max="9000" step="20" placeholder="Ingrese el monto" required>
+          <h5>Ingrese la cantidad que desea depositar</h5><br>
+          <input type="submit" value="Depositar">
+      </form> 
+  </div>
+  <br><br><br><br><br><br>
+  <div class="regresar" ng-controller="Saldo">
+    <a href="Depositar.html#!/?id={{id}}"> <input type="submit" value="Regresar"></a>
+  </div>
+</body>
+</html>

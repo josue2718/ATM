@@ -1,0 +1,134 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  body{
+    height: 100vh;
+    background: rgb(255,117,117);
+    background: radial-gradient(circle, rgba(255,117,117,1) 0%, rgb(185, 16, 16) 100%);
+    color: rgb(0, 0, 0);
+    
+    background-size:cover;
+  
+  }
+  h1{
+    background-color: rgb(255, 255, 255);
+    padding: 2vw;
+    color: rgb(0, 0, 0);
+    text-align: center ;
+    
+  }
+  
+  .container {
+    text-align: center;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    width: 1285px;
+  
+  }
+  
+  .container input{
+    margin:0%;
+  
+    border: none;
+    border-radius: 3px;
+    cursor: pointer; 
+    background-color: #ca1d1d;
+    color: white;
+  }
+  .container input
+  {
+    margin:3%;
+    padding: 15px 150px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer; 
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+  }
+  .container input[type="submit"]:hover 
+  { background-color: #ba1b1b;
+    color: #ffffff;
+  }
+  .LOGO img 
+  {
+    width: 440px; 
+    height: 320px; 
+    transition: opacity 0.3s ease;
+    opacity: 0.1;
+    display: block; /* Hace que la imagen sea un elemento de bloque */
+    margin: 0 auto; 
+    
+  }
+
+.logotipo img {
+  
+  width:70px; 
+  height: auto; 
+  margin: 0%;
+  position: absolute;
+  top: 3%;
+  right: 0;
+  margin-right: 20px;
+  
+}
+
+.img2 img {
+  
+  width:200px; 
+  height: auto; 
+  margin: 0%;
+  position: absolute;
+  top: 44%;
+  right: 74%;
+  margin-right: 20px;
+  opacity: 0.6;
+}
+.img3 img {
+  
+  width:200px; 
+  height: auto; 
+  margin: 0%;
+  position: absolute;
+  top: 44%;
+  right: 9%;
+  margin-right: 20px;
+  opacity: 0.6;
+}
+.container input img {
+  
+  width:70px; 
+  height: auto; 
+  margin: 0%;
+  position: absolute;
+  top: 3%;
+  right: 0;
+  margin-right: 20px;
+  
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+  .container2 input
+  {
+    margin:3%;
+    padding: 15px 150px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer; 
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+
+    ;
+  }
+  .container2 input[type="submit"]:hover 
+  { background-color: #ba1b1b;
+    color: #ffffff;
+  }

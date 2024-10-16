@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <title>Start Bank</title>
+  <link rel="stylesheet" href="Transacciones.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="angular.min.js"></script>
+  <script src="Transacciones.js"></script>
+</head>
+<body  ng-controller="ticket" >
+
+  <h1 class="logotipo"> <img src="SB.png" alt="Texto alternativo para la imagen">START BANK</h1>
+    <br><div class="tarjeta"><h4></h4></div>
+
+    <div class="carga" id="carga">
+      <div class="spinner"></div>
+    </div>
+<div class="listo">
+      <h2 ><img src="cheque.png" alt="Texto alternativo para la imagen"> Operación Exitosa</h2>
+     </div>
+    <div class="LOGO">
+      <img src="SB.png" alt="Texto alternativo para la imagen">
+    </div><br>
+    
+    <div>
+    <div >
+    <h2>Num. Tarjeta:{{Tarjeta}}</h2>
+    <h3>Nombre del dueño: {{Cliente}}</h3>
+    <h4>Transacción: {{ Tipo }}</h4>
+    <h4>Monto {{ Monto | currency}}</h4>
+    <h4>Folio: {{ Folio}}</h4>  
+    <h4>Fecha: {{ fechaActual }} </h4>
+    <div >
+      <br><br><br><br><br><br><br><br>
+    
+    <div class="container"> 
+      <button type="button" ng-click="redirigir('Principal.html')">Salir</button>
+      <button type="button" ng-click="redirigir('MenuST.html')">Otra Operación</button>
+    </div>
+    <!--<div class="container"> 
+      <button type="button">Notificar Por Correo</button><br><br>
+      <button type="button" ng-click="redirigir('Principal.html')">Retirar Tarjeta</button>
+    </div>-->
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        setTimeout(function() {
+          var cargaElement = document.getElementById('carga');
+          if (cargaElement) {
+            cargaElement.style.display = 'none';
+          }
+          var logoElement = document.getElementById('LOGO');
+          if (logoElement) {
+            logoElement.style.display = 'block';
+          }
+        }, 2000);
+      });
+    </script>
+    
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <title>Depositar</title>
+  <link rel="stylesheet" href="Transacciones.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="SB.png" type="image/png">
+  <script src="angular.min.js"></script>
+  <script src="Deposito.js"></script>
+</head>
+<body>
+  <h1 class="logotipo"> <img src="SB.png" alt="Texto alternativo para la imagen">Depositar</h1>
+    <br><div class="tarjeta"  ng-controller="Saldo">
+    <h2>Saldo: {{Saldo | currency }}</h2></div>
+    <h4>solo puedes retirar hasta :$9000</h4>
+    <h4>Tengo billetes desde: $20 a $1,000</h4>
+    <br><br><br><br>
+    <h4></h4>
+    <br><br><br><br>
+  
+    <div ng-controller="deposito" class="container">
+      <button type="button" ng-click="depositar(500)">Depositar $500</button><br><br>
+      <button type="button" ng-click="depositar(1000)">Depositar $1,000</button>
+    </div>
+    <div ng-controller="deposito" class="container">
+      <button type="button" ng-click="depositar(2000)">Depositar $2,000</button><br><br>
+      <button type="button" ng-click="redirigir('depositarotracantidad.html#!/?id=')">Depositar otra cantidad</button>
+    </div>
+    <div ng-controller="deposito" class="container">
+      <button type="button" ng-click="depositar(5000)">Depositar $5,000</button><br><br>
+      <button type="button" ng-click="redirigir('MenuTransacciones.html#!/?id=')">Regresar</button>
+    </div>
+  </div>
+  
+  </div>
+</body>
+</html>

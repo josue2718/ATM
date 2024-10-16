@@ -1,0 +1,149 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: rgb(255,117,117);
+  background: radial-gradient(circle, rgba(255,117,117,1) 0%, rgb(185, 16, 16) 100%);
+  color: rgb(0, 0, 0);
+}
+
+h1 {
+  background-color: rgb(255, 255, 255);
+  padding: 2vw;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+h2 {
+ 
+  margin: 1%;
+  color: rgb(255, 254, 254);
+  text-align: center;
+ 
+}
+h4 {
+ 
+  margin: 1%;
+  color: rgb(255, 255, 255);
+}
+
+.container {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1315px;
+}
+
+.container button {
+  width: 200px; /* Establece un ancho fijo para todos los botones */
+  margin: 1%;
+  text-align: center;
+  padding: 15px 0px;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.container2 button {
+  width: 200px;
+  margin:0 200px; 
+  text-align: center;
+  padding: 15px 0px;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+.container3 {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1315px;
+}
+
+.container3 button {
+  width: 400px; /* Establece un ancho fijo para todos los botones */
+  margin: 1%;
+  text-align: center;
+  padding: 15px 0px;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+.container3 button[type="button"]:hover {
+  background-color: #ba1b1b;
+  color: #ffffff;
+}
+
+.logotipo img {
+  
+  width:70px; 
+  height: auto; 
+  margin: 0%;
+  position: absolute;
+  top: 3%;
+  right: 0;
+  margin-right: 20px;
+  display: block;
+}
+.listo img {
+  width: 55px; 
+  margin-right: 10px;
+  margin-bottom: 10px; 
+  top: 17%;
+  right: 0;
+  margin-right: 785px;
+  position: absolute;
+}
+.listo h2 {
+ 
+  margin: 1%;
+  color: rgb(255, 255, 255);
+  text-align: center;
+
+}
+.listo
+{
+  text-align: center;
+}
+.Info h2 
+{
+  background-color: #ffffff; /* Color de fondo */
+  color: #000000; /* Color de texto */
+  padding: 50px;
+  width: 400px; /* Añade espacio alrededor del texto */
+  border-radius: 5px; /* Redondea las esquinas del fondo */
+  display: inline-block; /* Hace que el fondo se ajuste al contenido del texto */
+}
+.Info
+{
+  text-align: center;
+}
+.container img {
+  width: 100px; 
+  margin: 1%;
+}
+.container2 img {
+  width: 80px; 
+  margin: 1%;
+}

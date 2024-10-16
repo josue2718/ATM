@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en"  ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="Tarjet_AbonoStyles.css">
+    <title>Pago Abono</title>
+    <link rel="icon" href="SB.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="angular.min.js"></script>
+    <script src="Credito.js"></script>
+</head>
+<body>
+    <h1 class="logotipo"> <img src="SB.png" alt="Texto alternativo para la imagen"> Pago Abono</h1>
+    <div ng-controller="credito"><h2>Deuda: {{Aduedo| currency }}</h2><br><br></div>
+    <div class="Login" ng-controller="credito">
+        <form ng-submit="Abono()"  ng-init="limpiarCampos()">
+            <input type="number" ng-model="monto" name="monto" min="100" max="100000" step="100" placeholder="Ingrese el monto" required>
+            <h5>Ingrese la cantidad que desea abonar</h5><br>
+            <input type="submit" value="Pagar">
+        </form>
+        
+    </div>
+    <br><br>
+    <br><br>
+    <br><br><br><br>
+    <div class="regresar" ng-controller="credito">
+        <a href="Pago_Tarjeta.html#!/?id={{id}}"> <input type="submit" value="Regresar"></a>
+      </div>
+
+</body>
+</html>

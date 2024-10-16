@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="Menu_Credito.css">
+    <title>Pago</title>
+    <link rel="icon" href="SB.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="angular.min.js"></script>
+    <script src="CreditoEstuciantil.js"></script>
+</head>
+<body>
+    <h1 class="logotipo"> <img src="SB.png" alt="Texto alternativo para la imagen"> Pago Credito Estudiantil</h1>
+
+    <br><br>
+
+    <h4>Seleccione una opción</h4>
+    <br></br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="container" ng-controller="Pago">
+            <a href="Credito_EstudiantilSueldo.html#!/?id={{id}}"><input type="submit" value="Pago Conforme A Sueldo"></a>
+            <a href="Credito_EstudiantilFijo.html#!/?id={{id}}"><input type="submit" value="Pago Fijo"></a>
+    </div>
+        <div class="container" ng-controller="Pago">
+            <a href="HistorialesEducativo.html#!/?id={{id}}"><input type="submit" value="Historial de pagos"></a>
+            <a href="MenuPrincipal.html#!/?id={{id}}"><input type="submit" value="Regresar"></a>
+    </div>
+</body>
+</html>

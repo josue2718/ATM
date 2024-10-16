@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <title>Retirar</title>
+  <link rel="stylesheet" href="Transacciones.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="angular.min.js"></script>
+  <script src="Transacciones.js"></script>
+</head>
+<body >
+  
+  <h1 class="logotipo"> <img src="SB.png" alt="Texto alternativo para la imagen"> START BANK</h1>
+    
+    <br>
+    <div ng-controller="transaccion">
+      <h4>Núm. Tarjeta:{{Tarjeta}}</h4>
+    </div>
+    
+    
+    <div class="Info" ng-controller="transaccion">
+      <h2 class="info">Saldo: {{Saldo  | currency }}</h2>
+    </div>
+    
+ 
+    <br><br><br><br><br><br><br><br><br>
+    
+    <div ng-controller="transaccion" class="container"> 
+      <br>
+      <button type="button" ng-click="redirigir('MenuPrincipal.html')">Menú Principal</button>
+    </div>
+    <div ng-controller="transaccion" class="container"> 
+      <button type="button" ng-click="redirigir('Principal.html')">Retirar Tarjeta</button>
+      <button type="button" ng-click="redirigir('MenuTransacciones.html')">Otra Operación</button>
+    </div>
+</body>
+</html>

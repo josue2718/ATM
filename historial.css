@@ -1,0 +1,166 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: rgb(255,117,117);
+  background: radial-gradient(circle, rgba(255,117,117,1) 0%, rgb(185, 16, 16) 100%);
+  color: rgb(0, 0, 0);
+}
+
+h1 {
+  background-color: rgb(255, 255, 255);
+  padding: 2vw;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+h2 {
+ 
+  margin: 1%;
+  color: rgb(255, 254, 254);
+ 
+}
+h4 {
+ 
+  margin: 1%;
+  color: rgb(255, 255, 255);
+}
+
+.container {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1310px;
+}
+
+.container button {
+  width: 300px; /* Establece un ancho fijo para todos los botones */
+  margin: 1%;
+  text-align: center;
+  padding: 15px 0px;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+.container button[type="button"]:hover {
+  background-color: #ba1b1b;
+  color: #ffffff;
+}
+
+.logotipo img {
+  
+  width:70px; 
+  height: auto; 
+  margin: 0%;
+  position: absolute;
+  top: 3%;
+  right: 0;
+  margin-right: 20px;
+  display: block;
+}
+.listo img {
+  width: 55px; 
+  margin-right: 10px;
+  margin-bottom: 10px; 
+  top: 17%;
+  right: 0;
+  margin-right: 785px;
+  position: absolute;
+}
+.listo h2 {
+ 
+  margin: 1%;
+  color: rgb(255, 255, 255);
+  text-align: center;
+
+}
+.listo
+{
+  text-align: center;
+}
+.Info h2 
+{
+  background-color: #ffffff; /* Color de fondo */
+  color: #000000; /* Color de texto */
+  padding: 5px;
+  width: 400px; /* Añade espacio alrededor del texto */
+  border-radius: 10px; /* Redondea las esquinas del fondo */
+  display: inline-block; /* Hace que el fondo se ajuste al contenido del texto */
+}
+.Info
+{
+  text-align: left;
+}
+
+.LOGO img 
+{
+  width: 500px; 
+  height: 350px; 
+  transition: opacity 0.3s ease;
+  opacity: 0.1;
+  display: block; /* Hace que la imagen sea un elemento de bloque */
+  margin: 0 auto; 
+  margin-right: 10px;
+  margin-bottom: 10px; 
+  top: 20%;
+  right: 0;
+  margin-right: 450px;
+  position: absolute;
+}
+
+table {
+  width: 90%; /* Ajusta el ancho de la tabla al 90% del contenedor */
+  margin: 0 auto; /* Centra la tabla horizontalmente */
+  border-collapse: collapse
+}
+
+th, td {
+  padding: 6px;
+  text-align: center;
+  border-bottom: 1px solid #000000; /* Borde inferior para todas las celdas */
+}
+
+th {
+  background-color: #ffffff; /* Color de fondo para los encabezados */
+  color: #000000; /* Color del texto para los encabezados */
+}
+
+td {
+  background-color: #ff8989a6; /* Color de fondo para las celdas de datos */
+}
+
+.label
+{
+  color:rgb(255, 255, 255)4 ;
+}
+
+/* Estilo para el contenedor del select */
+select {
+  width: 100px; /* Ajusta el ancho según sea necesario */
+  padding: 8px 12px; /* Ajusta el relleno según sea necesario */
+  font-size: 16px; /* Tamaño de fuente */
+  border: 1px solid #ccc; /* Borde del select */
+  border-radius: 4px; /* Radio de borde */
+  background-color: #fff; /* Color de fondo */
+}
+
+/* Estilo para la etiqueta del select */
+label {
+  font-weight: bold; /* Negrita */
+  margin-right: 10px; /* Margen derecho */
+}
+
+/* Opcional: Estilo para resaltar la etiqueta */
+label {
+  color: #ffffff; /* Color de texto */
+}
+
+

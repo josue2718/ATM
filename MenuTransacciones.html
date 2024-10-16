@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transacciones</title>
+  <link rel="icon" href="SB.png" type="image/png">
+  <link rel="stylesheet" href="menutransacciones.css">
+  <script src="angular.min.js"></script>
+  <script src="Transacciones.js"></script>
+</head>
+<body>
+  <h1 class="logotipo"> <img src="SB.png" alt="Texto alternativo para la imagen"> Transacciones</h1>
+    <br><div class="tarjeta"><h4></h4></div>
+
+    <br><br><br><br>
+    <h2>Seleccione Una Opción:</h2>
+    <br><br><br><br><br><br><br><br>
+  
+  <div ng-controller="transaccion" class="container">
+    <button type="button" ng-click="redirigir('Retirar.html')">Retiro</button><br><br>
+    <button type="button" ng-click="redirigir('Historiales.html')">Historial</button>
+  </div>
+  <div ng-controller="transaccion" class="container">
+    <button type="button" ng-click="redirigir('Depositar.html')" >Depositar</button><br><br>
+    <button type="button" ng-click="redirigir('MenuPrincipal.html')">Regresar</button>
+  </div>
+  <div ng-controller="transaccion" class="container">
+    <button type="button" ng-click="redirigir('Consultar.html')">Consultar saldo</button><br><br>
+    <button type="button" ng-click="redirigir('Principal.html')">Retirar Tarjeta</button>
+  </div>
+  
+</body>
+</html>

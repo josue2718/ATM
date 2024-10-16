@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Numerical Keyboard</title>
+<link rel="stylesheet" href="teclado.css">
+<script src="angular.min.js"></script>
+<script src="loginController.js"></script>
+</head>
+<body>
+
+<div class="keyboard" ng-controller="LoginController">
+    <button ng-click="addToInput(1)">1</button>
+    <button ng-click="addToInput(2)">2</button>
+    <button ng-click="addToInput(3)">3</button>
+    <button ng-click="addToInput(4)">4</button>
+    <button ng-click="addToInput(5)">5</button>
+    <button ng-click="addToInput(6)">6</button>
+    <button ng-click="addToInput(7)">7</button>
+    <button ng-click="addToInput(8)">8</button>
+    <button ng-click="addToInput(9)">9</button>
+    <button ng-click="addToInput(0)">0</button>
+    <button ng-click="clearInput()">Limpiar</button>
+</div>
+
+</body>
+</html>

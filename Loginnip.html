@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Start Bank</title>
+  <link rel="icon" href="SB.png" type="image/png">
+  <link rel="stylesheet" href="Login.css">
+  <script src="angular.min.js"></script>
+  <script src="loginController.js"></script>
+</head>
+<body>
+  <h1 class="logotipo"> <img src="SB.png" alt="Texto alternativo para la imagen"> START BANK</h1>
+  <br><br><br><br><br><br><br><br><br>
+  <div class="Login" ng-controller="Nip">
+    <form ng-submit="Validar()">
+        <input type="password" ng-model="Nip" id="Nip" name="Nip"  placeholder="Nip de la Tarjeta (4 Digitos)" required maxlength="4"pattern="\d{4}"><h5>Ingrese su Nip</h5><br>
+        <input type="submit" value="Iniciar Sesión">
+    </form> 
+  </div>
+  <br><br><br><br><br>
+  <div class="regresar">
+    <a href="Login.html"> <input type="button" value="Regresar"></a>
+  </div>
+  <div class="img2">
+    <img src="teclado.png" alt="Texto alternativo para la imagen">
+  </div>
+  <div class="img3">
+    <img src="teclado.png" alt="Texto alternativo para la imagen">
+  </div>
+</body>
+</html>

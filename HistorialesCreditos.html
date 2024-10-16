@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <title>Historial</title>
+  <link rel="stylesheet" href="historial.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="angular.min.js"></script>
+  <script src="historial.js"></script>
+</head>
+<body>
+
+<h1 class="logotipo"> <img src="SB.png" alt="Texto alternativo para la imagen"> START BANK</h1>
+<div class="Info" ng-controller="HistorialCredito">
+<br>
+  <label for="sortType">Ordenar por:</label>
+  <select id="sortType" ng-model="sortType">
+    <option value="monto">Monto</option>
+    <option value="fecha">Fecha</option>
+  </select>
+  <label for="sortReverse">Orden:</label>
+
+  <label for="sortReverse">
+    <select id="sortReverse" ng-model="sortReverse" ng-change="changeOrder()">
+        <option value="false">Ascendente</option>
+        <option value="true">Descendente</option>
+    </select>
+</label>
+
+  <br><br><br>
+  <div class="tabla-scroll">
+    <table>
+      <thead class="encabezados">
+          <tr>
+              <th >Tipo</th>
+              <th>Tipo Pago</th>
+              <th >Monto</th>
+              <th >Saldo Restante</th>
+              <th >Folio</th>
+              <th >Fecha</th>
+          </tr>
+      </thead>
+      <tbody class="datos">
+          <tr ng-repeat="transaccion in historialTransacciones | orderBy:sortType:sortReverse">
+              <td>{{ transaccion.tipo }}</td>
+              <td>{{ transaccion.pago }}</td>
+              <td>{{ transaccion.monto }}</td>
+              <td>{{ transaccion.saldoRestante }}</td>
+              <td>{{ transaccion.folio }}</td>
+              <td>{{ transaccion.fecha }}</td>
+          </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<br><br>
+<div class="container" ng-controller="Historial">
+  <button type="button" ng-click="redirigir('MenuPrincipal.html')">Menú Principal</button>
+  <button type="button" ng-click="redirigir('Principal.html')">Retirar Tarjeta</button>
+  <button type="button" ng-click="redirigir('Pago_Credito.html')">Otra Operación</button>
+</div>
+
+</body>
+</html>
