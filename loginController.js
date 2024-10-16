@@ -81,7 +81,7 @@ angular.module('myApp', [])
     $scope.Validar = function() {
         var Nip = $scope.Nip;
         console.log($scope.nip)
-        if ( Nip = $scope.nip) { 
+        if ( Nip == $scope.nip) { 
             $window.location.href ='MenuPrincipal.html#!/?id=' + $scope.id;
             alert('Bienvenido: ' + $scope.Nom);
         } else {
